@@ -1,1 +1,1 @@
-# xmas-day-21
+# Scrimba - JavaScriptmas - Day 21: Expanding Search Bar
