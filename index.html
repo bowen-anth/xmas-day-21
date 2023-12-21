@@ -8,10 +8,14 @@
 </head>
 <body>
     <div class="container">
+        <label class="visually-hidden" for="search-field">Search Field:</label>
         <input type="search" 
               class="search-bar" 
               id="search-field"
-              placeholder="Search..."/>
+              placeholder="Search..."
+              onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'Search...'"
+              />
       </div>
 </body>
 </html>

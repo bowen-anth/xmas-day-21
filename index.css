@@ -3,7 +3,57 @@ html, body {
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --search-border: #bbb;
     --search-focus-border: #3a71ca;
 }
+
+.container {
+    /* margin: 0 auto; */
+    width: 15%;
+    margin: 10rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+#search-field {
+    width: 33.33%;
+    transition: width .8s ease-in;
+    border: 2px solid var(--search-border);
+}
+
+#search-field:focus {
+    
+    width: 100%;
+    border: var(--search-focus-border);
+    overflow: hidden;
+}
+
+/* Search input takes 1/3 width of its container */
+
+/* When user clicks into search bar: */
+
+/* input grows to entire width of its parent container with smooth transition */
+/* shrinks back to original size when user clicks away */
+/* blue border */
+/* :focus selector and pseudo selector that lets you change placeholder styles */
+
+/* form inputs should always have a label. create label with a valid for attribute */
+/* Look up some css rules that hide the search input's label visually but keeps it accessible to screen readers */
+
+/* Bonus: placeholder text not visible when user clicks inside search bar */
